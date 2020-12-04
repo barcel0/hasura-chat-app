@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind component;
+@tailwind utilities;
+
+@layer base{
+  html{
+    font-size: 13px;
+  }
+
+  .btn{
+    @apply mx-2 px-4 py-1 cursor-pointer border rounded-md text-white;
+  }
+
+  .btn-selected{
+    @apply bg-custom-purpleMedium ;
+  }
+
+  .btn-unselected{
+    @apply  text-custom-purpleMedium ;
+  }
+
+  .btn-unselected:hover{
+    @apply border-white text-white;
+  }
+}
